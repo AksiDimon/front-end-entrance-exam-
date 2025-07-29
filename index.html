@@ -1,245 +1,603 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
     <title>CV page</title>
-</head>
+  </head>
 
-<body>
-  <div class="container" id="page">
-
-    <header class="header">
-        <img src="/icons/profileImg.svg" alt="profile-img">
+  <body>
+    <div class="container" id="page">
+      <header class="header">
+        <img src="/icons/profileImg.svg" alt="profile-img" />
         <div class="name-box">
-            <div class="name-box-inner">
-                <p id="gretting" contenteditable="true" class="ripple">Hello 👋🏻 I’m</p>
-                <h3 id="full-name" contenteditable="true" class="ripple">Graham Hunt</h3>
-                <p id="keywords" contenteditable="true" class="ripple">Brand/Logo</p>
-                <p id="profession" contenteditable="true" class="ripple">Designer</p>
-            </div>
-
+          <div class="name-box-inner">
+            <p id="gretting" contenteditable="true" class="ripple">
+              Hello 👋🏻 I’m
+            </p>
+            <h3 id="full-name" contenteditable="true" class="ripple">
+              Graham Hunt
+            </h3>
+            <p id="keywords" contenteditable="true" class="ripple">
+              Brand/Logo
+            </p>
+            <p id="profession" contenteditable="true" class="ripple">
+              Designer
+            </p>
+          </div>
         </div>
-        <div class="languages-box"> 
-            <div class="languages-box-inner">
-                <h3 id="languages-title" class="ripple" contenteditable="true">Languages</h3>
-                    <div class="language">
-                      <div class="language-item">
-                        <div id="language-first" contenteditable="true" class="language-name ripple">English</div>
-                        <div class="english-load"></div>
-                      </div>
-                      <div class="language-item">
-                        <div id="language-second" contenteditable="true" class="language-name ripple">Spanish</div>
-                          <div class="spanish-load"></div>
-                      </div>
-                      <div class="language-item">
-                        <div id="language-third" contenteditable="true" class="language-name ripple">France</div>
-                          <div class="france-load"></div>
-                      </div>
-                    </div>
+        <div class="languages-box">
+          <div class="languages-box-inner">
+            <h3 id="languages-title" class="ripple" contenteditable="true">
+              Languages
+            </h3>
+            <div class="language">
+              <div class="language-item">
+                <div
+                  id="language-first"
+                  contenteditable="true"
+                  class="language-name ripple"
+                >
+                  English
+                </div>
+                <div class="english-load"></div>
+              </div>
+              <div class="language-item">
+                <div
+                  id="language-second"
+                  contenteditable="true"
+                  class="language-name ripple"
+                >
+                  Spanish
+                </div>
+                <div class="spanish-load"></div>
+              </div>
+              <div class="language-item">
+                <div
+                  id="language-third"
+                  contenteditable="true"
+                  class="language-name ripple"
+                >
+                  France
+                </div>
+                <div class="france-load"></div>
+              </div>
             </div>
+          </div>
         </div>
-    </header>
+      </header>
 
-
-    <div class="education-interests-box">
+      <div class="education-interests-box">
         <div class="education-box">
-            <h3 id="education-title" contenteditable="true" class="ripple">Education</h3>
-            <div class="education-containers">
-                <div class="education-container">
-                    <div class="education-container-inner">
-                        <div class="education-container-inner-top">
-                            <h3 id="year-first" contenteditable="true" class="ripple">2024</h3>
-                            <img src="/icons/Vector.svg" alt="Vector">
-                        </div>
-                        <p id="education-block-title-first" contenteditable="true" class="ripple">UX/UI</p>
-                        <ul>
-                            <li id="education-first-block-link1" contenteditable="true" class="ripple">#UI</li>
-                            <li id="education-first-block-link2" contenteditable="true" class="ripple">#UX</li>
-                            <li id="education-first-block-link3" contenteditable="true" class="ripple">#research</li>
-                            <li id="education-first-block-link4" contenteditable="true" class="ripple">#DesignSystem</li>
-                            <li id="education-first-block-link5" contenteditable="true" class="ripple">#weriframing</li>
-                            <li id="education-first-block-link6" contenteditable="true" class="ripple">#figma</li>
-                            <li id="education-first-block-link7" contenteditable="true" class="ripple">#IA</li>
-                        </ul>
-                        <span id="education-first-block-span" contenteditable="true" class="ripple">Neoland</span>
-                    </div>
+          <h3 id="education-title" contenteditable="true" class="ripple">
+            Education
+          </h3>
+          <div class="education-containers">
+            <div class="education-container">
+              <div class="education-container-inner">
+                <div class="education-container-inner-top">
+                  <h3 id="year-first" contenteditable="true" class="ripple">
+                    2024
+                  </h3>
+                  <img src="/icons/Vector.svg" alt="Vector" />
                 </div>
-                <div class="education-container">
-                    <div class="education-container-inner">
-                        <h3 id="year-second" contenteditable="true" class="ripple">2022</h3>
-                        <p id="education-block-title-second" contenteditable="true" class="ripple">Product designer</p>
-                        <ul>
-                            <li id="education-second-block-link1" contenteditable="true" class="ripple">#analytics</li>
-                            <li id="education-second-block-link2" contenteditable="true" class="ripple">#research</li>
-                            <li id="education-second-block-link3" contenteditable="true" class="ripple">#prototype</li>
-                            <li id="education-second-block-link4" contenteditable="true" class="ripple">#wireframes</li>
-                        </ul>
-                        <span id="education-second-block-span" contenteditable="true" class="ripple">Coursera</span>
-                    </div>
-                </div>
-                <div class="education-container">
-                    <div class="education-container-inner">
-                        <h3 id="year-third" contenteditable="true" class="ripple">2017-2021</h3>
-                        <p id="education-block-title-third" contenteditable="true" class="ripple">Graphic design</p>
-                        <ul>
-                            <li id="education-third-block-link1" contenteditable="true" class="ripple">#branding</li>
-                            <li id="education-third-block-link2" contenteditable="true" class="ripple">#web</li>
-                            <li id="education-third-block-link3" contenteditable="true" class="ripple">#illustration</li>
-                            <li id="education-third-block-link4" contenteditable="true" class="ripple">#adobe</li>
-                        </ul>
-                        <span id="education-third-block-span" contenteditable="true" class="ripple">Cali Institute of the Arts</span>
-                    </div>
-                </div>
+                <p
+                  id="education-block-title-first"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  UX/UI
+                </p>
+                <ul>
+                  <li
+                    id="education-first-block-link1"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #UI
+                  </li>
+                  <li
+                    id="education-first-block-link2"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #UX
+                  </li>
+                  <li
+                    id="education-first-block-link3"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #research
+                  </li>
+                  <li
+                    id="education-first-block-link4"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #DesignSystem
+                  </li>
+                  <li
+                    id="education-first-block-link5"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #weriframing
+                  </li>
+                  <li
+                    id="education-first-block-link6"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #figma
+                  </li>
+                  <li
+                    id="education-first-block-link7"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #IA
+                  </li>
+                </ul>
+                <span
+                  id="education-first-block-span"
+                  contenteditable="true"
+                  class="ripple"
+                  >Neoland</span
+                >
+              </div>
             </div>
+            <div class="education-container">
+              <div class="education-container-inner">
+                <h3 id="year-second" contenteditable="true" class="ripple">
+                  2022
+                </h3>
+                <p
+                  id="education-block-title-second"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Product designer
+                </p>
+                <ul>
+                  <li
+                    id="education-second-block-link1"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #analytics
+                  </li>
+                  <li
+                    id="education-second-block-link2"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #research
+                  </li>
+                  <li
+                    id="education-second-block-link3"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #prototype
+                  </li>
+                  <li
+                    id="education-second-block-link4"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #wireframes
+                  </li>
+                </ul>
+                <span
+                  id="education-second-block-span"
+                  contenteditable="true"
+                  class="ripple"
+                  >Coursera</span
+                >
+              </div>
+            </div>
+            <div class="education-container">
+              <div class="education-container-inner">
+                <h3 id="year-third" contenteditable="true" class="ripple">
+                  2017-2021
+                </h3>
+                <p
+                  id="education-block-title-third"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Graphic design
+                </p>
+                <ul>
+                  <li
+                    id="education-third-block-link1"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #branding
+                  </li>
+                  <li
+                    id="education-third-block-link2"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #web
+                  </li>
+                  <li
+                    id="education-third-block-link3"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #illustration
+                  </li>
+                  <li
+                    id="education-third-block-link4"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    #adobe
+                  </li>
+                </ul>
+                <span
+                  id="education-third-block-span"
+                  contenteditable="true"
+                  class="ripple"
+                  >Cali Institute of the Arts</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
         <div class="interests-contacts-box">
-            <div class="interests-inner">
-                <h3 id="interests-title" contenteditable="true" class="ripple">Interests</h3>
-                <div class="interests">
-                    <div id="interest-one" contenteditable="true" class="interest ripple">branding</div>
-                    <div id="interest-two" contenteditable="true" class="interest ripple">brand identity</div>
-                    <div id="interest-three" contenteditable="true" class="interest ripple">logo</div>
-                    <div id="interest-four" contenteditable="true" class="interest ripple">typography</div>
-                    <div id="interest-five" contenteditable="true" class="interest ripple">photography</div>
-                    <div id="interest-sex" contenteditable="true" class="interest ripple">designing</div>
-                    <div id="interest-seven" contenteditable="true" class="interest ripple">poster design</div>
-                    <div id="interest-eight" contenteditable="true" class="interest ripple">research</div>
-                    <div id="interest-nine" contenteditable="true" class="interest ripple">social networks</div>
-                    <div id="interest-ten" contenteditable="true" class="interest ripple">illustration</div>
-                </div>
+          <div class="interests-inner">
+            <h3 id="interests-title" contenteditable="true" class="ripple">
+              Interests
+            </h3>
+            <div class="interests">
+              <div
+                id="interest-one"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                branding
+              </div>
+              <div
+                id="interest-two"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                brand identity
+              </div>
+              <div
+                id="interest-three"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                logo
+              </div>
+              <div
+                id="interest-four"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                typography
+              </div>
+              <div
+                id="interest-five"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                photography
+              </div>
+              <div
+                id="interest-sex"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                designing
+              </div>
+              <div
+                id="interest-seven"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                poster design
+              </div>
+              <div
+                id="interest-eight"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                research
+              </div>
+              <div
+                id="interest-nine"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                social networks
+              </div>
+              <div
+                id="interest-ten"
+                contenteditable="true"
+                class="interest ripple"
+              >
+                illustration
+              </div>
             </div>
-            <div class="contacts-info">
-                <p id="contacts-info-title" contenteditable="true" class="ripple">Let´s chat! I´m ready to work on excinting projects
-                </p>
-                <div class="contacts">
-                    <a id="contact-tel" contenteditable="true" class="ripple" href="tel:+34666666666">+34 666 666 666</a>
-                    <span>|</span>
-                    <a id="contact-mail" contenteditable="true" class="ripple" href="mailto:ivan19bj@gmail.com">ivan19bj@gmail.com</a>
-                </div>
+          </div>
+          <div class="contacts-info">
+            <p id="contacts-info-title" contenteditable="true" class="ripple">
+              Let´s chat! I´m ready to work on excinting projects
+            </p>
+            <div class="contacts">
+              <a
+                id="contact-tel"
+                contenteditable="true"
+                class="ripple"
+                href="tel:+34666666666"
+                >+34 666 666 666</a
+              >
+              <span>|</span>
+              <a
+                id="contact-mail"
+                contenteditable="true"
+                class="ripple"
+                href="mailto:ivan19bj@gmail.com"
+                >ivan19bj@gmail.com</a
+              >
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-
-
-
-    <div class="tools-experience-box">
+      <div class="tools-experience-box">
         <div class="tools-container">
-            <h3 id="tools-title" contenteditable="true" class="ripple">Tools</h3>
-            <div class="scroll-container">
-                <div class="tool-box">
-                    <div id="tool-title-first" contenteditable="true" class="tool-box-title ripple">design</div>
-                    <div class="tools">
-                        <img src="/icons/skills/logoFigma.svg" alt="logoFigma">
-                        <img src="/icons/skills/logoCreativeCloud.svg" alt="logoCreativeCloud">
-                        <img src="/icons/skills/logoMiro.svg" alt="logoMiro">
-                        <img src="/icons/skills/logoMeet.svg" alt="logoMeet">
-                        <img src="/icons/skills/logoNotion.svg" alt="logoNotion">
-                        <img src="/icons/skills/logoanalytics.svg" alt="logoanalytics">
-                    </div>
-                </div>      <div class="tool-box">
-                    <div id="tool-title-second" contenteditable="true" class="tool-box-title ripple">no-code</div>
-                    <div class="tools">
-                        <img src="/icons/skills/2logoFramer.svg" alt="logoFramer">
-                        <img src="/icons/skills/2logoWebflow.svg" alt="logoWebFlow">
-                        <img src="/icons/skills/2logoWordpress.svg" alt="logoWordpress">
-                        <img src="/icons/skills/2logoZapìer.svg" alt="logoZapier">
-                    </div>
-                </div>
-                <div class="tool-box">
-                    <div id="tool-title-third" contenteditable="true" class="tool-box-title ripple">artoficial intelligence
-                    </div>
-                    <div class="tools">
-                        <img src="/icons/skills/3logoChatGPT.svg" alt="logoChatGPT">
-                        <img src="/icons/skills/3logoCopilot.svg" alt="logoCopilot">
-                        <img src="/icons/skills/3logoMidjourney.svg" alt="logoMidjouney">
-                    </div>
-                </div>
+          <h3 id="tools-title" contenteditable="true" class="ripple">Tools</h3>
+          <div class="scroll-container">
+            <div class="tool-box">
+              <div
+                id="tool-title-first"
+                contenteditable="true"
+                class="tool-box-title ripple"
+              >
+                design
+              </div>
+              <div class="tools">
+                <img src="/icons/skills/logoFigma.svg" alt="logoFigma" />
+                <img
+                  src="/icons/skills/logoCreativeCloud.svg"
+                  alt="logoCreativeCloud"
+                />
+                <img src="/icons/skills/logoMiro.svg" alt="logoMiro" />
+                <img src="/icons/skills/logoMeet.svg" alt="logoMeet" />
+                <img src="/icons/skills/logoNotion.svg" alt="logoNotion" />
+                <img
+                  src="/icons/skills/logoanalytics.svg"
+                  alt="logoanalytics"
+                />
+              </div>
             </div>
+            <div class="tool-box">
+              <div
+                id="tool-title-second"
+                contenteditable="true"
+                class="tool-box-title ripple"
+              >
+                no-code
+              </div>
+              <div class="tools">
+                <img src="/icons/skills/2logoFramer.svg" alt="logoFramer" />
+                <img src="/icons/skills/2logoWebflow.svg" alt="logoWebFlow" />
+                <img
+                  src="/icons/skills/2logoWordpress.svg"
+                  alt="logoWordpress"
+                />
+                <img src="/icons/skills/2logoZapìer.svg" alt="logoZapier" />
+              </div>
+            </div>
+            <div class="tool-box">
+              <div
+                id="tool-title-third"
+                contenteditable="true"
+                class="tool-box-title ripple"
+              >
+                artoficial intelligence
+              </div>
+              <div class="tools">
+                <img src="/icons/skills/3logoChatGPT.svg" alt="logoChatGPT" />
+                <img src="/icons/skills/3logoCopilot.svg" alt="logoCopilot" />
+                <img
+                  src="/icons/skills/3logoMidjourney.svg"
+                  alt="logoMidjouney"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-
 
         <div class="experience-container-box">
-            <h3 id="experience-title" contenteditable="true" class="ripple">Experience</h3>
-            <div class="experience-container">
-                <div class="experience-container-title">
-                    <p id="experience-date-first" contenteditable="true" class="ripple">Jul.2023 - Ago.2023</p>
-                    <div class="rate">most recent</div>
-                </div>
-                <div class="experience-inner">
-                    <div class="experience-inner-name">
-                        <h2 id="experience-prof-first" contenteditable="true" class="ripple">Senior Graphic Designer</h2>
-                        <p id="experience-job-timeline-first" contenteditable="true" class="ripple">Pinnacle | Full-time</p>
-                    </div>
-                    <div class="experience-inner-ul">
-                        <ul>
-                            <li id="experience-first-about1" contenteditable="true" class="ripple">Research and brainstorm various
-                                design ideas for content and marketing.</li>
-                            <li id="experience-first-about2" contenteditable="true" class="ripple">Review the work submitted by Junior
-                                Designers and sharing feedback.</li>
-                        </ul>
-                    </div>
-                </div>
+          <h3 id="experience-title" contenteditable="true" class="ripple">
+            Experience
+          </h3>
+          <div class="experience-container">
+            <div class="experience-container-title">
+              <p
+                id="experience-date-first"
+                contenteditable="true"
+                class="ripple"
+              >
+                Jul.2023 - Ago.2023
+              </p>
+              <div class="rate">most recent</div>
             </div>
+            <div class="experience-inner">
+              <div class="experience-inner-name">
+                <h2
+                  id="experience-prof-first"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Senior Graphic Designer
+                </h2>
+                <p
+                  id="experience-job-timeline-first"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Pinnacle | Full-time
+                </p>
+              </div>
+              <div class="experience-inner-ul">
+                <ul>
+                  <li
+                    id="experience-first-about1"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Research and brainstorm various design ideas for content and
+                    marketing.
+                  </li>
+                  <li
+                    id="experience-first-about2"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Review the work submitted by Junior Designers and sharing
+                    feedback.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-            <div class="experience-container">
-                <div class="experience-container-title">
-                    <p id="experience-date-second" contenteditable="true" class="ripple">Ene.2021 - Jul.2023</p>
-                </div>
-                <div class="experience-inner">
-                    <div class="experience-inner-name">
-                        <h2 id="experience-prof-second" contenteditable="true" class="ripple">Graphic / Web designer</h2>
-                        <p id="experience-job-timeline-second" contenteditable="true" class="ripple">Double Square | Full-time</p>
-                    </div>
-                    <div class="experience-inner-ul">
-                        <ul>
-                            <li id="experience-second-about1" contenteditable="true" class="ripple">Development of internal projects
-                                from scratch, product design of brands.</li>
-                            <li id="experience-second-about2" contenteditable="true" class="ripple">Landing page, webapps and hybrid
-                                apps</li>
-                            <li id="experience-second-about3" contenteditable="true" class="ripple">Taking decisions with stakeholders
-                                for the future of products such as Beagle labs, myur...</li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="experience-container">
+            <div class="experience-container-title">
+              <p
+                id="experience-date-second"
+                contenteditable="true"
+                class="ripple"
+              >
+                Ene.2021 - Jul.2023
+              </p>
             </div>
+            <div class="experience-inner">
+              <div class="experience-inner-name">
+                <h2
+                  id="experience-prof-second"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Graphic / Web designer
+                </h2>
+                <p
+                  id="experience-job-timeline-second"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Double Square | Full-time
+                </p>
+              </div>
+              <div class="experience-inner-ul">
+                <ul>
+                  <li
+                    id="experience-second-about1"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Development of internal projects from scratch, product
+                    design of brands.
+                  </li>
+                  <li
+                    id="experience-second-about2"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Landing page, webapps and hybrid apps
+                  </li>
+                  <li
+                    id="experience-second-about3"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Taking decisions with stakeholders for the future of
+                    products such as Beagle labs, myur...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-            <div class="experience-container">
-                <div class="experience-container-title">
-                    <p id="experience-date-third" contenteditable="true" class="ripple">Feb.2021 - Jul.2023</p>
-                </div>
-                <div class="experience-inner">
-                    <div class="experience-inner-name">
-                        <h2 id="experience-prof-third" contenteditable="true" class="ripple">Graphic Designer</h2>
-                        <p id="experience-job-timeline-third" contenteditable="true" class="ripple">Freelance</p>
-                    </div>
-                    <div class="experience-inner-ul">
-                        <ul>
-                            <li id="experience-third-about1" contenteditable="true" class="ripple">Visual design for Events, Brands and
-                                Products.</li>
-                            <li id="experience-third-about2" contenteditable="true" class="ripple">Product design, Packaging Design
-                            </li>
-                            <li id="experience-third-about3" contenteditable="true" class="ripple">Logo Design</li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="experience-container">
+            <div class="experience-container-title">
+              <p
+                id="experience-date-third"
+                contenteditable="true"
+                class="ripple"
+              >
+                Feb.2021 - Jul.2023
+              </p>
             </div>
+            <div class="experience-inner">
+              <div class="experience-inner-name">
+                <h2
+                  id="experience-prof-third"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Graphic Designer
+                </h2>
+                <p
+                  id="experience-job-timeline-third"
+                  contenteditable="true"
+                  class="ripple"
+                >
+                  Freelance
+                </p>
+              </div>
+              <div class="experience-inner-ul">
+                <ul>
+                  <li
+                    id="experience-third-about1"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Visual design for Events, Brands and Products.
+                  </li>
+                  <li
+                    id="experience-third-about2"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Product design, Packaging Design
+                  </li>
+                  <li
+                    id="experience-third-about3"
+                    contenteditable="true"
+                    class="ripple"
+                  >
+                    Logo Design
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div id="notification">Сохранено</div>
-    <button id="download-btn" class="download-btn">Save</button>
-    <script src="https://cdn.jsdelivr.net/npm/jspdf@latest/dist/jspdf.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@latest/dist/html2canvas.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jspdf-html2canvas@latest/dist/jspdf-html2canvas.min.js"></script>  
+      <div id="notification">Сохранено</div>
+      <button id="download-btn" class="download-btn">Save</button>
+      <script src="https://cdn.jsdelivr.net/npm/jspdf@latest/dist/jspdf.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/html2canvas@latest/dist/html2canvas.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jspdf-html2canvas@latest/dist/jspdf-html2canvas.min.js"></script>
       <script src="js/main.js"></script>
-  </div>
-    
-</body>
- 
+    </div>
+  </body>
 </html>
