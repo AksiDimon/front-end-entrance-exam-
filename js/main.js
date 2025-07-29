@@ -1,24 +1,71 @@
-import '../css/style.css'
-import javascriptLogo from '../javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+/* global html2PDF */
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const btn = document.getElementById('download-btn');
+const page = document.getElementById('page');
+console.log(btn, page, '😍')
 
-setupCounter(document.querySelector('#counter'))
+btn.addEventListener('click', function(){
+  html2PDF(page, {
+    jsPDF: {
+      format: 'a4',
+    },
+    margin: {
+      top: 50,
+      right: 50,
+      bottom: 50,
+      left: 50,
+    },
+    imageType: 'image/jpeg',
+    output: './pdf/generate.pdf'
+  });
+});
+
+
+// main.js
+
+// Ключ в localStorage
+const STORAGE_KEY = 'resumeData';
+
+// Собираем все редактируемые элементы
+function getEditableFields() {
+  return Array.from(document.querySelectorAll('[contenteditable="true"]'))
+    // фильтруем только те, у кого есть id
+    .filter(el => el.id);
+}
+
+// Сохраняем текущее содержимое всех полей
+function saveAllFields() {
+  const data = {};
+  getEditableFields().forEach(el => {
+    data[el.id] = el.innerText.trim();
+  });
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+
+// Загружаем данные из localStorage и заполняем поля
+function loadAllFields() {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  if (!raw) return;
+  const data = JSON.parse(raw);
+  getEditableFields().forEach(el => {
+    if (data[el.id] != null) {
+      el.innerText = data[el.id];
+    }
+  });
+}
+
+
+// Устанавливаем слушатели
+document.addEventListener('DOMContentLoaded', () => {
+  // Восстановим данные
+  loadAllFields();
+
+  // На каждое изменение сохраняем
+  getEditableFields().forEach(el => {
+    // можно использовать 'input' или 'blur'
+    el.addEventListener('input', saveAllFields);
+    // если хотите сохранять только при потере фокуса:
+    // el.addEventListener('blur', saveAllFields);
+  });
+});
+
