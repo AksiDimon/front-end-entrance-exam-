@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.html",
     "format": "prettier --write \"**/*.{js,css,html,md,json}\""
@@ -14,6 +16,7 @@
     "@eslint/css": "^0.10.0",
     "@eslint/js": "^9.32.0",
     "eslint": "^9.32.0",
+    "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",
     "vite": "^5.2.0"
