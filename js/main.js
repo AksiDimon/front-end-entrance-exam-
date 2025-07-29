@@ -2,7 +2,7 @@
 
 const btn = document.getElementById('download-btn');
 const page = document.getElementById('page');
-console.log(btn, page, '😍');
+
 
 btn.addEventListener('click', function () {
   html2PDF(page, {
@@ -52,7 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   getEditableFields().forEach((el) => {
     el.addEventListener('input', saveAllFields);
-    // или сохранять только при потере фокуса:
-    // el.addEventListener('blur', saveAllFields);
   });
 });
