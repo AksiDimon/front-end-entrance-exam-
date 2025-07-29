@@ -21,19 +21,15 @@ btn.addEventListener('click', function(){
 });
 
 
-// main.js
-
-// Ключ в localStorage
 const STORAGE_KEY = 'resumeData';
 
-// Собираем все редактируемые элементы
+
 function getEditableFields() {
   return Array.from(document.querySelectorAll('[contenteditable="true"]'))
-    // фильтруем только те, у кого есть id
     .filter(el => el.id);
 }
 
-// Сохраняем текущее содержимое всех полей
+
 function saveAllFields() {
   const data = {};
   getEditableFields().forEach(el => {
@@ -42,7 +38,7 @@ function saveAllFields() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
-// Загружаем данные из localStorage и заполняем поля
+
 function loadAllFields() {
   const raw = localStorage.getItem(STORAGE_KEY);
   if (!raw) return;
@@ -55,16 +51,14 @@ function loadAllFields() {
 }
 
 
-// Устанавливаем слушатели
+
 document.addEventListener('DOMContentLoaded', () => {
-  // Восстановим данные
+
   loadAllFields();
 
-  // На каждое изменение сохраняем
   getEditableFields().forEach(el => {
-    // можно использовать 'input' или 'blur'
     el.addEventListener('input', saveAllFields);
-    // если хотите сохранять только при потере фокуса:
+    // или сохранять только при потере фокуса:
     // el.addEventListener('blur', saveAllFields);
   });
 });

@@ -1,5 +1,4 @@
 
-/* 1) Утилитарный класс */
 .ripple {
   position: relative;
   overflow: hidden;
@@ -17,7 +16,6 @@ display: block;
   pointer-events: none;
 }
 
-/* Запускаем анимацию при фокусе */
 .ripple:focus::after {
   animation: ripple-wave 1s ease-out forwards;
 }

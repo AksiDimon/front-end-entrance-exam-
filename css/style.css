@@ -101,9 +101,6 @@ ul{
     width: 50px;
     font-size: 0.625rem;
     line-height: 1.041rem;
-    /* padding-top: 0.5em;
-    padding-bottom: 0.5em; */
-    /* padding: 0.5em; */
 }
 
 .language-load-box {
@@ -461,10 +458,10 @@ ul{
 }
 
 .experience-inner-ul li.ripple {
-  display: list-item;         /* list-item возвращает маркер */
-  overflow: hidden;           /* клиппит волну */
-  list-style-position: inside;/* маркер рисуется внутри контента */
-  padding-left: .5em;
+    display: list-item;        
+    overflow: hidden;       
+    list-style-position: inside;
+    padding-left: .5em;
 }
 
 #notification {
@@ -499,10 +496,8 @@ ul{
 }
 
 .download-btn:hover {
-   
     color: rgba(253, 13, 13, 0.852);
     transform: translate(-50%, -50%) translateY(5px) scale(1.2);
-    /* box-shadow: 0 1.5em 3em 0 #4caf50; */
 }
 
 
